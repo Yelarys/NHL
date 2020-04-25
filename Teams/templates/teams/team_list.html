@@ -1,0 +1,13 @@
+<h3>NHL Teams</h3>
+
+<form method="POST" action="/">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" name="Create Team">
+</form>
+
+{% for team in team_list %}
+<li><img src="{{ team.image }}"> {{ team.name }} </li>
+{% endfor %}
+
+

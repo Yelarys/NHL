@@ -1,0 +1,138 @@
+{% load static %}
+<header>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</header>
+<body>
+
+<div id="header">
+<h1>National Hockey League</h1>
+</div>
+
+<div id="answersSection">
+<!-- <h3><script src="app.js"></script></h3> -->
+</div>
+
+<nav id=>
+  <ul id="navBar">
+    <li id="conference"><img id="homeimage" src="http://findicons.com/files/icons/1580/devine_icons_part_2/512/home.png" alt="Home" height="32" width="32"><a href="index.html">Home</a>
+    <li id="conference"><img id="eastconfimage" src="https://upload.wikimedia.org/wikipedia/en/1/16/NHL_Eastern_Conference.svg" alt="Eastern Conference" height="32" width="32"><a href="eastconf.html">Eastern Conference</a>
+      <li id="conference"><img id="westconfimage" src="https://upload.wikimedia.org/wikipedia/en/thumb/6/65/NHL_Western_Conference.svg/1280px-NHL_Western_Conference.svg.png" alt="Western Conference" height="32" width="32"><a href="westconf.html">Western Conference</a>
+</nav>
+
+<h1>Eastern Conference</h1>
+<p>The Eastern Conference is one of two conferences in the National Hockey League (NHL) used to divide teams. Its counterpart is the Western Conference.</p>
+
+
+
+
+<h1>Teams In The Eastern Conference</h1>
+{% for team in team_list %}
+<ul id="eastconfone">
+  {% for team in team_list %}
+  <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Washington_Capitals.svg/1280px-Washington_Capitals.svg.png" height="15" width="15">  {{ team.name }} </li>
+  <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Tampa_Bay_Lightning_Logo_2011.svg/1098px-Tampa_Bay_Lightning_Logo_2011.svg.png" height="15" width="15"> Tampa Bay Lightning</li>
+  <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/New_York_Rangers.svg/2000px-New_York_Rangers.svg.png" height="15" width="15"> NY Rangers</li>
+  <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Florida_Panthers.svg/1047px-Florida_Panthers.svg.png" height="15" width="15"> Florida Panthers</li>
+  <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Logo_New_York_Islanders.svg/1064px-Logo_New_York_Islanders.svg.png" height="15" width="15"> NY Islanders</li>
+  <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Boston_Bruins_Old_Logo.svg/1024px-Boston_Bruins_Old_Logo.svg.png" height="15" width="15"> Boston Bruins</li>
+  <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Pittsburgh_Penguins_logo.svg/1093px-Pittsburgh_Penguins_logo.svg.png" height="15" width="15"> Pittsburgh Penguins</li>
+  <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Detroit_Red_Wings_logo.svg/1280px-Detroit_Red_Wings_logo.svg.png" height="15" width="15"> Detroit Red Wings</li>
+
+</ul>
+<ul id="eastconftwo">
+  <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Philadelphia_Flyers.svg/200px-Philadelphia_Flyers.svg.png" height="15" width="15"> Philadelphia Flyers</li>
+  <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Carolina_Hurricanes.svg/1280px-Carolina_Hurricanes.svg.png" height="15" width="15"> Carolina Hurricanes</li>
+  <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/New_Jersey_Devils_logo.svg/1018px-New_Jersey_Devils_logo.svg.png" height="15" width="15"> New Jersey Devils</li>
+  <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Ottawa_Senators.svg/868px-Ottawa_Senators.svg.png" height="15" width="15"> Ottawa Senators</li>
+  <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Montreal_Canadiens.svg/2000px-Montreal_Canadiens.svg.png" height="15" width="15"> Motreal Canadiens</li>
+  <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Columbus_BlueJackets.svg/1186px-Columbus_BlueJackets.svg.png" height="15" width="15"> Columbus Blue Jackets</li>
+  <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Buffalo_Sabres_Logo.svg/1024px-Buffalo_Sabres_Logo.svg.png" height="15" width="15"> Buffalo Sabres</li>
+  <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Toronto_Maple_Leafs_logo.svg/954px-Toronto_Maple_Leafs_logo.svg.png" height="15" width="15"> Toronto Maple Leafs</li>
+  </ul>
+{% endfor %}
+  <h3>Teams & Star Players: </h3>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Boston_Bruins_Old_Logo.svg/1024px-Boston_Bruins_Old_Logo.svg.png" height="15" width="15"><strong>Boston Bruins: </strong>The Boston Bruins are a professional ice hockey team based in Boston, Massachusetts. The Bruins compete in the National Hockey League as a member club of the league's Eastern Conference Atlantic Division.</p>
+
+<p><strong>Best Player: </strong><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nhl/players/full/145.png&w=350&h=254" alt="Smiley face" width="75" height="75" align="left"> Zdeno Chara is a Slovak professional ice hockey defenseman currently serving as captain of the Boston Bruins of the National Hockey League. He won the James Norris Memorial Trophy while playing for the Bruins in the 2008/2009 season. </p>
+<br>
+
+  <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Buffalo_Sabres_Logo.svg/1024px-Buffalo_Sabres_Logo.svg.png" height="15" width="15"><strong>Buffalo Sabres: </strong>The Buffalo Sabres are a professional ice hockey team based in Buffalo, New York. They are members of the Atlantic Division of the Eastern Conference of the National Hockey League.</p>
+
+  <p><strong>Best Player: </strong><img src="http://grfx.cstv.com/photos/schools/bost/sports/m-hockey/auto_headshot/10302681.jpeg" alt="Smiley face" width="75" height="75" align="left"> John Robert "Jack" Eichel is an American ice hockey center. He is currently playing for the Buffalo Sabres of the National Hockey League. Eichel was selected second overall in the 2015 NHL Entry Draft by the Buffalo Sabres.</p>
+
+<br>
+  <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Carolina_Hurricanes.svg/1280px-Carolina_Hurricanes.svg.png" height="15" width="15"><strong>Carolina Hurricanes: </strong>The Carolina Hurricanes are an American professional ice hockey team based in Raleigh, North Carolina, that competes in the National Hockey League. The Hurricanes are a member club of the league's Metropolitan Division in the Eastern Conference.</p>
+
+  <p><strong>Best Player: </strong><img src="http://cdn1-www.hockeysfuture.com/assets/uploads/2012/05/jeff_skinner_carolina.jpg" alt="Smiley face" width="75" height="75" align="left"> Jeffrey Scott Skinner is a Canadian ice hockey player currently playing for the Carolina Hurricanes of the National Hockey League. Born: May 16, 1992 (age 23), Markham, Canada</p>
+
+  <br>
+    <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Columbus_BlueJackets.svg/1186px-Columbus_BlueJackets.svg.png" height="15" width="15"><strong> Columbus Blue Jackets:</strong> The Columbus Blue Jackets are an American professional ice hockey team based in Columbus, Ohio, that competes in the National Hockey League. They are members of the league's Metropolitan Division of the Eastern Conference.</p>
+
+    <p><strong>Best Player: </strong><img src="http://megasportsnews.com/wp-content/uploads/2015/03/Scott-Hartnell-photo-courtesy-CBJ.png" alt="Smiley face" width="75" height="75" align="left"> Scott Wesley Hartnell is a Canadian professional ice hockey left winger currently playing for the Columbus Blue Jackets of the National Hockey League. He has also played with the Nashville Predators and the Philadelphia Flyers.</p>
+    <br>
+
+      <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Florida_Panthers.svg/1047px-Florida_Panthers.svg.png" height="15" width="15"><strong> Florida Panthers: </strong> The Florida Panthers are a professional ice hockey team based in the Miami metropolitan area. They are members of the Atlantic Division of the Eastern Conference of the National Hockey League. </p>
+
+
+      <p><strong>Best Player: </strong><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nhl/players/full/405.png&w=350&h=254" alt="Smiley face" width="75" height="75" align="left"> Jaromir Jagr is a Czech professional ice hockey right winger currently playing for the Florida Panthers of the National Hockey League.</p>
+      <br>
+
+      <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Columbus_BlueJackets.svg/1186px-Columbus_BlueJackets.svg.png" height="15" width="15"><strong> Montreal Canadiens: </strong> The Montreal Canadiens are a Canadian professional ice hockey team based in Montreal, Quebec, that competes in the National Hockey League. They are members of the league's Atlantic Division in the Eastern Conference. </p>
+
+      <p><strong>Best Player: </strong><img src="http://l1.yimg.com/bt/api/res/1.2/iUDaQXHoKb2tLVmVh5HrBw--/YXBwaWQ9eW5ld3NfbGVnbztmaT1maWxsO2g9MjMwO3E9NzU7dz0zNDU-/https://s.yimg.com/xe/i/us/sp/v/nhl_cutout/players_l/20151021/4558.png" alt="Smiley face" width="75" height="75" align="left"> Pernell Karl "P. K." Subban is a Canadian professional ice hockey defenceman and an alternate captain for the Montreal Canadiens of the National Hockey League.</p>
+      <br>
+
+      <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/New_Jersey_Devils_logo.svg/1018px-New_Jersey_Devils_logo.svg.png" height="15" width="15"><strong> New Jersey Devils: </strong> The New Jersey Devils are a professional ice hockey team based in Newark, New Jersey, that competes in the National Hockey League. The team is a member of the league's Metropolitan Division of the Eastern Conference.</p>
+
+      <p><strong>Best Player: </strong><img src="https://nhl.bamcontent.com/images/headshots/current/168x168/8471239.jpg" alt="Smiley face" width="75" height="75" align="left"> Cory Franklin Schneider is an American professional ice hockey goaltender currently playing for the New Jersey Devils in the National Hockey League. Schneider was selected in the first round, 26th overall, by the Canucks in the 2004 NHL Entry Draft. </p>
+      <br>
+
+      <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Logo_New_York_Islanders.svg/1064px-Logo_New_York_Islanders.svg.png" height="15" width="15"><strong> NY Islanders: </strong> The New York Islanders are an American professional ice hockey team based in New York City that competes in the National Hockey League. They are a member of the league's Metropolitan Division in the Eastern Conference.</p>
+
+      <p><strong>Best Player: </strong><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nhl/players/full/5160.png&w=350&h=254" alt="Smiley face" width="75" height="75" align="left"> John Tavares is a Canadian professional ice hockey centre who currently serves as the captain of the New York Islanders of the National Hockey League. He was selected first overall by the Islanders in the 2009 NHL Entry Draft.</p>
+      <br>
+
+      <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/New_York_Rangers.svg/2000px-New_York_Rangers.svg.png" height="15" width="15"><strong> NY Rangers: </strong> The New York Rangers are an American professional ice hockey team based in New York City that competes in the National Hockey League. They are a member club of the league's Metropolitan Division in the Eastern Conference.</p>
+
+      <p><strong>Best Player: </strong><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nhl/players/full/3081.png&w=350&h=254" alt="Smiley face" width="75" height="75" align="left"> Henrik Lundqvist is a Swedish professional ice hockey goaltender for the New York Rangers of the National Hockey League.</p>
+      <br>
+
+      <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Ottawa_Senators.svg/868px-Ottawa_Senators.svg.png" height="15" width="15"><strong> Ottawa Senators: </strong> The Ottawa Senators are a professional ice hockey team based in Ottawa, Ontario, Canada. They are members of the Atlantic Division of the Eastern Conference of the National Hockey League.</p>
+
+      <p><strong>Best Player: </strong><img src="http://l3.yimg.com/bt/api/res/1.2/px9dRmAPn_AO1H7VOMWg8A--/YXBwaWQ9eW5ld3NfbGVnbztmaT1maWxsO2g9MjMwO3E9NzU7dz0zNDU-/https://s.yimg.com/xe/i/us/sp/v/nhl_cutout/players_l/20151021/4491.png" alt="Smiley face" width="75" height="75" align="left"> Erik Sven Gunnar Karlsson is a Swedish professional ice hockey player who currently serves as captain of the Ottawa Senators of the National Hockey League. He was selected by the Senators in the first round of the 2008 NHL Entry Draft.</p>
+      <br>
+
+      <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Philadelphia_Flyers.svg/200px-Philadelphia_Flyers.svg.png" height="15" width="15"><strong> Philadelphia Flyers: </strong> The Philadelphia Flyers are an American professional ice hockey team based in Philadelphia, Pennsylvania, that competes in the National Hockey League. They are members of the league's Metropolitan Division of the Eastern Conference.</p>
+
+      <p><strong>Best Player: </strong><img src="http://l2.yimg.com/bt/api/res/1.2/SQJTeGnN5YlxFw8IqwI3lQ--/YXBwaWQ9eW5ld3NfbGVnbztmaT1maWxsO2g9MjMwO3E9NzU7dz0zNDU-/https://s.yimg.com/xe/i/us/sp/v/nhl_cutout/players_l/20151021/4002.png" alt="Smiley face" width="75" height="75" align="left"> Claude Giroux is a Canadian professional ice hockey player and captain of the Philadelphia Flyers of the National Hockey League. The Flyers selected Giroux 22nd overall in the 2006 NHL Entry Draft.</p>
+      <br>
+
+      <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Pittsburgh_Penguins_logo.svg/1093px-Pittsburgh_Penguins_logo.svg.png" height="15" width="15"><strong> Pittsburgh Penguins: </strong> The Pittsburgh Penguins are an American professional ice hockey team based in Pittsburgh, Pennsylvania, that competes in the National Hockey League. They are members of the league's Metropolitan Division of the Eastern Conference.</p>
+
+      <p><strong>Best Player: </strong><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nhl/players/full/3114.png&w=350&h=254" alt="Smiley face" width="75" height="75" align="left"> Sidney Patrick Crosby, ONS is a Canadian professional ice hockey player who serves as captain of the Pittsburgh Penguins of the National Hockey League. Crosby was drafted first overall by the Penguins out of the Quebec Major Junior Hockey League.</p>
+      <br>
+
+      <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Tampa_Bay_Lightning_Logo_2011.svg/1098px-Tampa_Bay_Lightning_Logo_2011.svg.png" height="15" width="15"><strong> Tampa Bay Lightning: </strong> The Tampa Bay Lightning are a professional ice hockey team based in Tampa, Florida. Established in 1992, they are members of the Atlantic Division of the Eastern Conference of the National Hockey League. </p>
+
+      <p><strong>Best Player: </strong><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nhl/players/full/5037.png&w=350&h=254" alt="Smiley face" width="75" height="75" align="left"> Steven Stamkos is a Canadian professional ice hockey centre and team captain for the Tampa Bay Lightning of the National Hockey League. Stamkos was the first overall pick in the 2006 OHL Entry Draft, from the Markham Waxers of the OMHA. </p>
+      <br>
+
+      <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Toronto_Maple_Leafs_logo.svg/954px-Toronto_Maple_Leafs_logo.svg.png" height="15" width="15"><strong> Toronto Maple Leafs: </strong> The Toronto Maple Leafs are a Canadian professional ice hockey team based in Toronto, Ontario, that competes in the National Hockey League. The Maple Leafs are a member club of the league's Atlantic Division in the Eastern Conference.</p>
+
+      <p><strong>Best Player: </strong><img src="http://cdn1-www.hockeysfuture.com/assets/uploads/2012/05/jonathan_bernier_toronto.jpg" alt="Smiley face" width="75" height="75" align="left"> Jonathan Bernier is a Canadian professional ice hockey goaltender currently playing for the Toronto Maple Leafs of the National Hockey League.</p>
+      <br>
+
+      <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Washington_Capitals.svg/1280px-Washington_Capitals.svg.png" height="15" width="15"><strong> Washington Capitals: </strong> The Washington Capitals are an American professional ice hockey team based in Washington, D.C. that competes in the National Hockey League. They are members of the league's Metropolitan Division of the Eastern Conference.</p>
+
+      <p><strong>Best Player: </strong><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nhl/players/full/3101.png&w=350&h=254" alt="Smiley face" width="75" height="75" align="left"> Alexander Mikhailovich "Alex" Ovechkin is a Russian professional ice hockey winger and captain of the Washington Capitals of the National Hockey League.</p>
+      <br>
+
+</script>
+
+<div id="footer">
+<a href="https://www.nhl.com/">NHL.com</a> &nbsp;
+&nbsp;<a href="https://twitter.com/thattonekiid">Follow Me On Twitter</a>
+</div>
+
+</body>
